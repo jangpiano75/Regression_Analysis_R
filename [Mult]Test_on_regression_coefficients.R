@@ -43,7 +43,7 @@ Test_Regression_Coefficient = function(data_frame, Y, a){
   options("scipen" = 100)   #for the case having p-value as exponent
   test = summary(lm(Y ~., data = data_frame))
   
-  for (i in 2:length(data_1)){
+  for (i in 2:length(data_frame)){
     
     p_value = c(p_value, test$coefficients[,4][i])
     print (paste ("p_value for B", i-1, "is", p_value[i-1], collapse = " " ))
