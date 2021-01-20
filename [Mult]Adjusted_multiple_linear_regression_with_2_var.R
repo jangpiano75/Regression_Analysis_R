@@ -1,4 +1,6 @@
-###code for adjusted multiple linear regression with 2 variables (변수가 두개인 조정된 다중 선형 회귀 모형) 
+#https://jangpiano-science.tistory.com/110?category=875432
+
+#code for adjusted multiple linear regression with 2 variables (변수가 두개인 조정된 다중 선형 회귀 모형) 
 multiple_regre_v_2 = function(X1, X2, Y, x1, x2){
   
   options("scipen" = 100)  #지수로 표기될 경우를 대비해 (지수표기 -->숫자표기)
