@@ -1,4 +1,6 @@
 #[Simple regression] Test, C.I on Regression coefficient 
+# https://jangpiano-science.tistory.com/107?category=875433
+
 
 ##------------------------code for test on coefficients(B0 and B1)
 
