@@ -1,10 +1,13 @@
 #https://jangpiano-science.tistory.com/110?category=875432
 
 lm(Y~., data = data_frame)
+coef(lm(Y~., data = data_frame))
 
 #[EXAMPLE]
+
 data_1 = data.frame(Y, X1, X2, X3)
 lm(Y~.,data_1)
+coef(lm(Y~.,data_1))
 
 #
 #code for adjusted multiple linear regression with more than 2 variables (generalized code) 
