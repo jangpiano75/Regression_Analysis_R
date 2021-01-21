@@ -2,12 +2,19 @@
 
 lm(Y~., data = data_frame)
 coef(lm(Y~., data = data_frame))
+fitted(lm(Y~., data = data_frame))
 
 #[EXAMPLE]
+X1 = c(3, 3, 4, 5, 5, 6, 6, 6, 7, 7, 8, 9, 10)  
+X2 = c(2, 4, 6, 5, 8, 4, 6, 9, 7, 9, 7, 9, 10) 
+X3 = c(1, 5, 2, 6, 7, 2, 3, 6, 9, 10, 9, 4, 7) 
+Y = c(1, 2, 3, 3, 6, 4, 5, 7, 3, 7, 6, 9, 10)
 
 data_1 = data.frame(Y, X1, X2, X3)
+
 lm(Y~.,data_1)
 coef(lm(Y~.,data_1))
+fitted(lm(Y~., data = data_1))
 
 #
 #code for adjusted multiple linear regression with more than 2 variables (generalized code) 
