@@ -46,6 +46,15 @@ conf_int_Y = function(X,Y,x,a){
 
 #[example with the code]
 conf_int_Y(X, Y, 6, 0.05)
+#[simpler code in r]
+
+predict(lm(Y~X), newdata = data.frame(X= ), interval =  c("none", "confidence", "prediction"))
+
+#[EX]
+X1 = c(3, 3, 4, 5, 5, 6, 6, 6, 7, 7, 8, 9, 10) 
+Y = c(1, 2, 3, 3, 6, 4, 5, 7, 3, 7, 6, 9, 10)
+
+predict(lm(Y~X1), newdata = data.frmae(X1 = 3), interval = "confidence")
 
 
 ##---------------------confidence interval for variance
