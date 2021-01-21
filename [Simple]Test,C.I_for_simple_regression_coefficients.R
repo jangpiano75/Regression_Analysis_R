@@ -1,7 +1,6 @@
 #[Simple regression] Test, C.I on Regression coefficient 
 # https://jangpiano-science.tistory.com/107?category=875433
 
-
 ##------------------------code for test on coefficients(B0 and B1)
 
 #a is the significance level 
@@ -61,6 +60,17 @@ Test_Regression_Coefficient(X, Y, 0.05)
 '''
 
 
+
+#CONFIDENCE INTERVAL OF REGRESSION COEFFICIENT
+
+confint(lm(Y~X1)) 
+
+#[example]
+
+X1 = c(3, 3, 4, 5, 5, 6, 6, 6, 7, 7, 8, 9, 10)  
+Y = c(1, 2, 3, 3, 6, 4, 5, 7, 3, 7, 6, 9, 10)
+
+confint(lm(Y~X1))
 
 
 ##--------------------------code for finding confidence interval for B0 and B1
