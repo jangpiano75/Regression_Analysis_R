@@ -63,14 +63,14 @@ Test_Regression_Coefficient(X, Y, 0.05)
 
 #CONFIDENCE INTERVAL OF REGRESSION COEFFICIENT
 
-confint(lm(Y~X1)) 
+confint(lm(Y~X1), level = 0.05) 
 
 #[example]
 
 X1 = c(3, 3, 4, 5, 5, 6, 6, 6, 7, 7, 8, 9, 10)  
 Y = c(1, 2, 3, 3, 6, 4, 5, 7, 3, 7, 6, 9, 10)
 
-confint(lm(Y~X1))
+confint(lm(Y~X1), level = 0.90)
 
 
 ##--------------------------code for finding confidence interval for B0 and B1
